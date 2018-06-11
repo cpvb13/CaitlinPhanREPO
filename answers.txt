@@ -1,0 +1,270 @@
+Script started on Sun Jun 10 23:36:40 2018
+[?1034h
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ #!/bin/bash
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ touch make_tree.sh
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ chmod +x make_tree.sh
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ mkdir -p s1/{s3,s2/Advanced}
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ touch s1/s3/conf.txt 
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ echo "I love bash scripting." > s1/s3/conf.txt 
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ touch s1/s2/text_chunk1.txt
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ echo "A whole new world
+> A new fantastic point of view" > s1/s2/text_chunk1.txt
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ touch s1/s2/advanced/text_chunk2.txt
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ cp s1/s2/text_chunk1.txt s1/s2/advanced/text_chunk2.txt 
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ echo "Do you want to build a snowman?" >> s1/s2/advanced/text_chunk2.txt 
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ 
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ 
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ ex[K[Kman script
+[?1049h[?1h=mdoc warning: .Fx: Unknown FreeBSD version `9.2' (#188)
+
+SCRIPT(1)                 BSD General Commands Manual                SCRIPT(1)
+
+[1mNAME[0m
+     [1mscript[0m -- make typescript of terminal session
+
+[1mSYNOPSIS[0m
+     [1mscript[0m [[1m-adkpqr[0m] [[1m-F[0m [4mpipe[24m] [[1m-t[0m [4mtime[24m] [[4mfile[24m [[4mcommand[24m [4m...[24m]]
+
+[1mDESCRIPTION[0m
+     The [1mscript[0m utility makes a typescript of everything printed on your ter-
+     minal.  It is useful for students who need a hardcopy record of an inter-
+     active session as proof of an assignment, as the typescript file can be
+     printed out later with lpr(1).
+
+     If the argument [4mfile[24m is given, [1mscript[0m saves all dialogue in [4mfile[24m.  If no
+     file name is given, the typescript is saved in the file [4mtypescript[24m.
+
+     If the argument [4mcommand[24m is given, [1mscript[0m will run the specified command
+     with an optional argument vector instead of an interactive shell.
+
+     The following options are available:
+
+:[K[K [KESCESC[KOO[KBB[K     [1m-a[0m      Append the output to [4mfile[24m or [4mtypescript[24m, retaining the prior con-
+:[K[K [KESCESC[KOO[KBB[K             tents.
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K     [1m-d[0m      When playing back a session with the [1m-p[0m flag, do not sleep
+:[K[K [KESCESC[KOO[KBB[K             between records when playing back a timestamped session.
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K     [1m-F[0m [4mpipe[24m
+:[K[K [KESCESC[KOO[KBB[K             Immediately flush output after each write.  This will allow a
+:[K[K [KESCESC[KOO[KBB[K             user to create a named pipe using mkfifo(1) and another user may
+:[K[K [KESCESC[KOO[KBB[K             watch the live session using a utility like cat(1).
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K     [1m-k[0m      Log keys sent to the program as well as output.
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K     [1m-p[0m      Play back a session recorded with the [1m-r[0m flag in real time.
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K     [1m-q[0m      Run in quiet mode, omit the start, stop and command status mes-
+:[K[K [KESCESC[KOO[KBB[K             sages.
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K     [1m-r[0m      Record a session with input, output, and timestamping.
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K     [1m-t[0m [4mtime[24m
+:[K[K [KESCESC[KOO[KBB[K             Specify the interval at which the script output file will be
+:[K[K [KESCESC[KOO[KBB[K             flushed to disk, in seconds.  A value of 0 causes [1mscript[0m to flush
+:[K[K [KESCESC[KOO[KBB[K             after every character I/O event.  The default interval is 30 sec-
+:[K[K [KESCESC[KOO[KBB[K             onds.
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K     The script ends when the forked shell (or command) exits (a [4mcontrol-D[24m to
+:[K[K [KESCESC[KOO[KBB[K     exit the Bourne shell (sh(1)), and [4mexit[24m, [4mlogout[24m or [4mcontrol-D[24m (if
+:[K[K [KESCESC[KOO[KBB[K     [4mignoreeof[24m is not set) for the C-shell, csh(1)).
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K     Certain interactive commands, such as vi(1), create garbage in the type-
+:[K[K [KESCESC[KOO[KBB[K     script file.  The [1mscript[0m utility works best with commands that do not
+:[K[K [KESCESC[KOO[KBB[K     manipulate the screen.  The results are meant to emulate a hardcopy ter-
+:[K[K [KESCESC[KOO[KBB[K     minal, not an addressable one.
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K[1mENVIRONMENT[0m
+:[K[K [KESCESC[KOO[KBB[K     The following environment variables are utilized by [1mscript[0m:
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K     SCRIPT
+:[K[K [KESCESC[KOO[KBB[K            The SCRIPT environment variable is added to the sub-shell.  If
+:[K[K [KESCESC[KOO[KBB[K            SCRIPT already existed in the users environment, its value is
+:[K[K [KESCESC[KOO[KBB[K            overwritten within the sub-shell.  The value of SCRIPT is the name
+:[K[K [KESCESC[KOO[KBB[K            of the [4mtypescript[24m file.
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K     SHELL  If the variable SHELL exists, the shell forked by [1mscript[0m will be
+:[K[K [KESCESC[KOO[KBB[K            that shell.  If SHELL is not set, the Bourne shell is assumed.
+:[K[K [KESCESC[KOO[KBB[K            (Most shells set this variable automatically).
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K[1mSEE[0m [1mALSO[0m
+:[K[K [KESCESC[KOO[KBB[K     csh(1)
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K[1mHISTORY[0m
+:[K[K [KESCESC[KOO[KBB[K     The [1mscript[0m command appeared in 3.0BSD.
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K     The [1m-d[0m, [1m-p[0m and [1m-r[0m options first appeared in NetBSD 2.0 and were ported to
+:[K[K [KESCESC[KOO[KBB[K     FreeBSD 9.2.
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K[1mBUGS[0m
+:[K[K [KESCESC[KOO[KBB[K     The [1mscript[0m utility places [1meverything[0m in the log file, including linefeeds
+:[K[K [KESCESC[KOO[KBB[K     and backspaces.  This is not what the naive user expects.
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K     It is not possible to specify a command without also naming the script
+:[K[K [KESCESC[KOO[KBB[K     file because of argument parsing compatibility issues.
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K     When running in [1m-k[0m mode, echo cancelling is far from ideal.  The slave
+:[K[K [KESCESC[KOO[KBB[K     terminal mode is checked for ECHO mode to check when to avoid manual echo
+:[K[K [KESCESC[KOO[KBB[K     logging.  This does not work when the terminal is in a raw mode where the
+:[K[K [KESCESC[KOO[KBB[K     program being run is doing manual echo.
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[K     If [1mscript[0m reads zero bytes from the terminal, it switches to a mode when
+:[K[K [KESCESC[KOO[KBB[K     it only attempts to read once a second until there is data to read.  This
+:[K[K [KESCESC[KOO[KBB[K     prevents [1mscript[0m from spinning on zero-byte reads, but might cause a
+:[K[K [KESCESC[KOO[KBB[K     1-second delay in processing of user input.
+:[K[K [KESCESC[KOO[KBB[K
+:[K[K [KESCESC[KOO[KBB[KBSD                            December 4, 2013                            BSD
+:[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K [KESCESC[KOO[KBB[K[K[7m(END)[27m[K[K[?1l>[?1049l
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ ls
+First_GitHub_Exercise.txt	s1
+answers.txt			week2_tip.py
+make_tree.sh
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ git stattu[K[Kus
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31manswers.txt[m
+	[31mmake_tree.sh[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ git add ans[K[K[K[K[K[K[K[K[K[K[Kgit add answers.txt
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ git commit -m ""C"o"p"i"e"d" "t"e"r"m"i"n"a"l" "s"c"r"i"p"t" "i"n"t"o" "a"n"s"w"e"r"s" "t"e"x"t"f"i"l"e" "[1P"
+[master 7f2f8ee] Copied terminal script into answers textfile
+ 1 file changed, 163 insertions(+)
+ create mode 100644 SUBMISSIONS/answers.txt
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ git add s1/
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   answers.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mmake_tree.sh[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ git add /s1
+fatal: /s1: '/s1' is outside repository
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   answers.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mmake_tree.sh[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ git add s1
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   answers.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mmake_tree.sh[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ git add s1/
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   answers.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mmake_tree.sh[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ git sta[K[K[Kiniit[K[Kt
+Initialized empty Git repository in /Users/kk/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS/.git/
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mFirst_GitHub_Exercise.txt[m
+	[31manswers.txt[m
+	[31mmake_tree.sh[m
+	[31ms1/[m
+	[31mweek2_tip.py[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ git add ans[Kswers.txt
