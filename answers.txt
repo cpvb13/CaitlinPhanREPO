@@ -268,3 +268,200 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 [0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
 $ git add ans[Kswers.txt
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ git add s1/
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ git commit -m ""C"a"i"t"l"i"n"[1P"[1P"[1P"[1P"[1P"[1P"[1P"F"i"l"e" "t"r"e"e" "[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"F"i"l"e"[1P"[1P"[1P"[1P"A"n"s"[1P"[1P"[1P"T"e"r"m"i"n"a"l" "s"c"r"i"p"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"[1P"S"c"r"i"p"t" "o"[1P"o"f" "h"o"w" "I" "b"u"i"l"t" "a" "f"i"l"e" "t"r"e"e" "a"n"d" "t"h"e" "s"1" "f"i"l"e" "t"r"e"e" "i"t"s"e"l"f"." [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[master (root-commit) dc3b889] Script of how I built a file tree and the s1 file tree itself.
+ 4 files changed, 276 insertions(+)
+ create mode 100644 answers.txt
+ create mode 100644 s1/s2/Advanced/text_chunk2.txt
+ create mode 100644 s1/s2/text_chunk1.txt
+ create mode 100644 s1/s3/conf.txt
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   answers.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mFirst_GitHub_Exercise.txt[m
+	[31mmake_tree.sh[m
+	[31mweek2_tip.py[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ ls
+First_GitHub_Exercise.txt	s1
+answers.txt			week2_tip.py
+make_tree.sh
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ git config --global user.name "YOUR_USERNAME"[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcpvb13"
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ git config --global user.email "your_email_address@example.com"[1Pm"[1Pm"[1Pm"[1Pm"[1Pm"[1Pm"[1P"[1Pm"[1Pm"[1Pm"[1Pm"[1Pm"[1Pm"[1Pm"[1Pm"[1Pm"[1Pm"[1Pm"[1Pm"[1Pm"[1Pm"[1Pm"[1P"[1Pm"[1Pm"[1Pm"[1Pm"[1Pm"[1Pm"[C[1P"c"a"i"t"@"b"e"r"k"e"l"e"y"."e"d"u"
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ git [K[K[K[Kgit pull upstream master
+fatal: 'upstream' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ git remote remove origin
+fatal: No such remote: origin
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ git remote add origin https://github.com/cpvb13/CaitlinPhanREPO.git
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   answers.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mFirst_GitHub_Exercise.txt[m
+	[31mmake_tree.sh[m
+	[31mweek2_tip.py[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ git add answer.txt
+fatal: pathspec 'answer.txt' did not match any files
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ status
+bash: status: command not found
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   answers.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mFirst_GitHub_Exercise.txt[m
+	[31mmake_tree.sh[m
+	[31mweek2_tip.py[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ git pushgit r[K[K[K[K[K[K[K[K[Kremote -v
+origin	https://github.com/cpvb13/CaitlinPhanREPO.git (fetch)
+origin	https://github.com/cpvb13/CaitlinPhanREPO.git (push)
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ git remote remove origin
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ git remote add upstream https://github.com/MIDS-INFO-W18/assignments_upstream_ summer18_SS.git
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ 
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ git remote add upstream https://github.com/MIDS-INFO-W18/assignments_upstream_ssummer18_SS.git[Aremove origin[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-v[K[C[C[C[C[C[C[3Pstatus[C[C[4Pstatus[C[Cgit add answer.txt[C[C[C[C[C[C[8Pstatusremote add origin https://github.com/cpvb13/CaitlinPhanREPO.git
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ git remote add origin https://github.com/cpvb13/CaitlinPhanREPO.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cupstream https://github.com/MIDS-INFO-W18/assignments_upstream_ssummer18_SS.git[Aremove origin[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-v[K
+origin	https://github.com/cpvb13/CaitlinPhanREPO.git (fetch)
+origin	https://github.com/cpvb13/CaitlinPhanREPO.git (push)
+upstream	https://github.com/MIDS-INFO-W18/assignments_upstream_summer18_SS.git (fetch)
+upstream	https://github.com/MIDS-INFO-W18/assignments_upstream_summer18_SS.git (push)
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ git push[K[K[K[K[K[K[K[Kgit pull upstream master
+warning: no common commits
+remote: Counting objects: 15, done.[K
+remote: Compressing objects:   7% (1/13)   [Kremote: Compressing objects:  15% (2/13)   [Kremote: Compressing objects:  23% (3/13)   [Kremote: Compressing objects:  30% (4/13)   [Kremote: Compressing objects:  38% (5/13)   [Kremote: Compressing objects:  46% (6/13)   [Kremote: Compressing objects:  53% (7/13)   [Kremote: Compressing objects:  61% (8/13)   [Kremote: Compressing objects:  69% (9/13)   [Kremote: Compressing objects:  76% (10/13)   [Kremote: Compressing objects:  84% (11/13)   [Kremote: Compressing objects:  92% (12/13)   [Kremote: Compressing objects: 100% (13/13)   [Kremote: Compressing objects: 100% (13/13), done.[K
+Unpacking objects:   6% (1/15)   Unpacking objects:  13% (2/15)   Unpacking objects:  20% (3/15)   Unpacking objects:  26% (4/15)   Unpacking objects:  33% (5/15)   Unpacking objects:  40% (6/15)   Unpacking objects:  46% (7/15)   Unpacking objects:  53% (8/15)   Unpacking objects:  60% (9/15)   
+Unpacking objects:  66% (10/15)   Unpacking objects:  73% (11/15)   Unpacking objects:  80% (12/15)   remote: Total 15 (delta 1), reused 15 (delta 1), pack-reused 0[K
+Unpacking objects:  86% (13/15)   Unpacking objects:  93% (14/15)   Unpacking objects: 100% (15/15)   Unpacking objects: 100% (15/15), done.
+From https://github.com/MIDS-INFO-W18/assignments_upstream_summer18_SS
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> upstream/master
+fatal: refusing to merge unrelated histories
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ 
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ git st[Ktatus
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   answers.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mFirst_GitHub_Exercise.txt[m
+	[31mmake_tree.sh[m
+	[31mweek2_tip.py[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ git push origin master
+To https://github.com/cpvb13/CaitlinPhanREPO.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/cpvb13/CaitlinPhanREPO.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ 
+
+[0;32mkk[0;36m@[0;34mCaitlins-MacBook-Pro [0;36m~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS[0;37m
+$ script [K[K[K[K[K[K[Kexit
+exit
+
+Script done on Sun Jun 10 23:53:40 2018
