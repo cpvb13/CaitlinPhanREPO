@@ -1,0 +1,17 @@
+GitHub Exercise
+
+This is a simple exercise designed to give you practice using GitHub. Additionally the following questions are meant to stimulate you to think about how innovation arises and propagates. Type your answers and commit them to your repository as outlined in the “Completing Your First Exercise With Git Reading Card” document. Be ready to share these answers <briefly> in the discussion section.
+
+* Bill Gates or Gary Kidall? Thomas Edison or Nicola Tesla? Rosalind Franklin or Watson and Crick? Steve(Jobs or Wozniak)?
+
+1a. Bill Gates, the Microsoft Mixed Reality project is intriguing to me and I also want the MSFT stock to rise.
+
+1b. Nikola Tesla, he wanted to provide electricity to for free to everyone.
+
+1c. Rosalind Franklin, I like the double helix shape of DNA.
+
+1d. Steve Jobs, Apple products are cool.
+
+* How might modern data science be disruptive to your industry? 
+
+2. Information technology is a broad subject encompassing data, storage, networks, and other technology-driven processes. The applications of computers in communities can increase efficiency of our everyday interactions. IT specialists can develop the software and hardware used in various programs. Take a look at your cell phone; facial recognition, mobile payments, route-planning, spam filtering, media recommendations, personalized content, and so many other neat services. There is a growing pool of talent of Data Scientists which is paving the way for highly intelligent systems. 
