@@ -1,3 +1,5 @@
+#I copied and pasted this
+
 cd ~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS
 
 mkdir -p s1/{s3,s2/Advanced}
