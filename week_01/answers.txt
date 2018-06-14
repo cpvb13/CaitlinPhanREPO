@@ -1,0 +1,19 @@
+#I copied and pasted this
+
+cd ~/Desktop/assignments_upstream_summer18_SS/SUBMISSIONS
+
+mkdir -p s1/{s3,s2/Advanced}
+touch s1/s3/conf.txt 
+echo "I love bash scripting." > s1/s3/conf.txt 
+
+touch s1/s2/text_chunk1.txt
+magic="A whole new world"
+carpet="A new fantastic point of view" 
+olaf="Do you want to build a snowman?"
+
+echo "$magic
+$carpet" > s1/s2/text_chunk1.txt
+
+touch s1/s2/advanced/text_chunk2.txt
+cp s1/s2/text_chunk1.txt s1/s2/advanced/text_chunk2.txt 
+echo "$olaf"  >> s1/s2/advanced/text_chunk2.txt 
